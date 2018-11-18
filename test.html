@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <style >
+      div{
+        border: 1px solid red ;
+      }
+      .test{
+        color: #0000ff;
+        text-align: center;
+      }
+      .c1{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test">
+        hello world
+        <div class="c1">
+          hellow world1
+        </div>
+        <div class="c2">
+          hellow world2
+        </div>
+        <div class="c3">
+          hellow world3
+        </div>
+    </div>
+    <script src="scripts/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".c1").click(function () {
+          $(".c2").show();
+        })
+        $(".c2").click(function () {
+          $(".c2").hide();
+        })
+      });
+    </script>
+  </body>
+</html>
